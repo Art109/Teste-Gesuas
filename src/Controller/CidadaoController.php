@@ -33,7 +33,7 @@ class CidadaoController extends AbstractController
 
             if($nome !== null && $nome !== ''){
 
-                $nis = rand(10000000000,99999999999);
+                $nis = $this->generateNis();
 
                 $cidadao = new Cidadao();
                 $cidadao->setNome($nome);
@@ -74,6 +74,20 @@ class CidadaoController extends AbstractController
     }
 
 
+    private function generateNis(): string
+    {
+ 
 
+        do {
+            // Gerar um novo NIS único
+            $nis = rand(10000000000, 99999999999);
+            // Verificar se o NIS já está em uso
+            $existingCidadao = $this->entityManager->getRepository(Cidadao::class)->findOneBy(['nis' => $nis]);
+                
+                
+        } while ($existingCidadao !== null);
+    
+            return $nis;
+    } 
     
 }

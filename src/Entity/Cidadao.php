@@ -16,7 +16,7 @@ class Cidadao
     #[ORM\Column(length: 255)]
     private ?string $nome = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(length: 255, unique: true)]
     private ?string $nis = null;
 
     public function getId(): ?int
