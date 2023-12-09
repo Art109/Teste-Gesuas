@@ -1,7 +1,7 @@
 Tenha Instalado 
 
 Symfony Cli
-Docker
+Docker Desktop
 Docker compose
 
 
@@ -30,3 +30,5 @@ Após isso execute a migração do doctrine
 symfony console doctrine:migrations:migrate
 
 Abra o navegador e acesse http://localhost:8000 para visualizar a aplicação
+
+Todos os testes foram feitos no windows
