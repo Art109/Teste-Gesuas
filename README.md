@@ -1,9 +1,9 @@
 Tenha Instalado 
 
-Symfony Cli
-Docker Desktop
-Docker compose
-PHP
+Symfony Cli,
+Docker Desktop,
+Docker compose,
+PHP 8.2,
 GIT
 
 
