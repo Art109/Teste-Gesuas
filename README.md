@@ -18,7 +18,7 @@ symfony composer install
 
 Ajuste o arquivo .env caso seja necessario configurar as variaveis de ambiente relacionadas ao BD
 
-Procure no seu pc o arquivo php.ini e o ajuste procure por "pdo_pgsql" e descomente sua linha apagando o #
+Procure no seu pc o arquivo php.ini e o ajuste procure por "pdo_pgsql" e descomente sua linha apagando o ";"
 
 Digite o comando para iniciar o serviço do Docker e iniciar o servidor
 
